@@ -1,0 +1,11 @@
+{
+  "name": "site-html",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'No build needed'",
+    "start": "echo 'Static site'"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
