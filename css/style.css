@@ -2,12 +2,14 @@
     --bg: #0f172a;
     --text: #e5e7eb;
     --card: #1e293b;  
+    --border: rgba(255,255,255,0.2);
 }
 
 body.light {
     --bg: #ffffff;
     --text: #111;
     --card: #f1f5f9;
+    --border: rgba(0,0,0,0.15);
 }
 
 #matrix-bg {
@@ -282,7 +284,7 @@ footer {
     padding: 15px 10px;
     font-size: 0.9rem;
     color: var(--text);
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid var(--border);
 }
 
 footer .footer-links {
