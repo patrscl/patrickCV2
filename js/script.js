@@ -1,12 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-    // Dark mode toggle
+    
     const btn = document.getElementById("themeToggle");
+
+    function loadParticles(color) {
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 60 },
+                color: { value: color },
+                size: { value: 3 },
+                line_linked: { enable: true, color: color },
+                move: { speed: 1 }
+            }
+        });
+    }
+
+    loadParticles("#00ff88"); 
+
+
     btn.addEventListener("click", function() {
         document.body.classList.toggle("light");
     });
 
-    // Reveal animations
     const reveals = document.querySelectorAll(".reveal");
     function revealOnScroll() {
         reveals.forEach(el => {
@@ -17,6 +31,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
-
-
 });
